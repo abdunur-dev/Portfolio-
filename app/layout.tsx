@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Abdurhaman Nur - Web3 & Full Stack Developer",
   description:
     "Portfolio of Abdurhaman Nur - Web3 and Full-stack developer specializing in blockchain, React, Next.js, and TypeScript",
-  generator: "v0.app",
+  
 }
 
 export default function RootLayout({
