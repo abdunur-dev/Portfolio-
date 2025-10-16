@@ -34,7 +34,7 @@ const projects = [
     live: "https://salahapologetics.com",
   },
   {
-    title: "BaseLink App",
+    title: "TibebeChain App",
     description:
       "Base Day 2 Challenge - A comprehensive blockchain application built on Base network with modern UI and seamless user experience.",
     tags: ["Next.js", "Base", "Web3", "TypeScript"],
