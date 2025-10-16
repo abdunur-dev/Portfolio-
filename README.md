@@ -1,30 +1,98 @@
-# Portfolio design and build
+Portfolio Website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS. Features a clean design with smooth animations and optimal performance.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/abduapologetic-6713s-projects/v0-portfolio-design-and-build)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/8Ej68JpCF6B)
+🚀 Tech Stack
 
-## Overview
+· Framework: Next.js 15.2.4
+· Frontend: React 19, TypeScript
+· Styling: Tailwind CSS 3.4.1
+· UI Components: Radix UI, Lucide Icons
+· Deployment: Vercel
+· Analytics: Vercel Analytics
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+✨ Features
 
-## Deployment
+· ⚡️ Built with Next.js 15 for optimal performance
+· 🎨 Modern UI with Tailwind CSS
+· 📱 Fully responsive design
+· 🎯 TypeScript for type safety
+· 🔥 React 19 with latest features
+· 🌙 Dark mode support
+· 📊 Vercel Analytics integration
+· 🚀 Optimized for SEO
 
-Your project is live at:
+🛠 Installation
 
-**[https://vercel.com/abduapologetic-6713s-projects/v0-portfolio-design-and-build](https://vercel.com/abduapologetic-6713s-projects/v0-portfolio-design-and-build)**
+1. Clone the repository:
 
-## Build your app
+```bash
+git clone https://github.com/abdunur-dev/Portfolio-.git
+cd Portfolio-
+```
 
-Continue building your app on:
+1. Install dependencies:
 
-**[https://v0.app/chat/projects/8Ej68JpCF6B](https://v0.app/chat/projects/8Ej68JpCF6B)**
+```bash
+pnpm install
+```
 
-## How It Works
+1. Run the development server:
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+pnpm dev
+```
+
+1. Open http://localhost:3000 in your browser.
+
+📦 Scripts
+
+· pnpm dev - Start development server
+· pnpm build - Build for production
+· pnpm start - Start production server
+· pnpm lint - Run ESLint
+
+🏗 Project Structure
+
+```
+portfolio/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   ├── header/           # Header component
+│   ├── hero/             # Hero section
+│   ├── projects/         # Projects showcase
+│   └── footer/           # Footer component
+├── public/               # Static assets
+└── config/              # Configuration files
+```
+
+🎨 Styling
+
+This project uses:
+
+· Tailwind CSS for utility-first styling
+· CSS Variables for theming
+· Tailwind Merge for conditional classes
+· Tailwind Animate for animations
+
+🚀 Deployment
+
+The site is automatically deployed on Vercel when pushing to the main branch.
+
+📄 License
+
+MIT License - feel free to use this project for your own portfolio.
+
+👨‍💻 Author
+
+Abdurhaman Nur
+
+· GitHub: @abdunur-dev
+· Portfolio: [Your Portfolio URL]
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
