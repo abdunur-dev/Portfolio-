@@ -11,7 +11,6 @@ I work on projects related to:
 - 🌍 Sustainable Development Goals (SDGs)
 - 🤖 Artificial Intelligence & Blockchain
 - 💻 Web2 + Web3 dApps
-- ⚙️ IoT & Arduino-based tech
 
 ---
 
