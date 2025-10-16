@@ -1,0 +1,41 @@
+import { redirect } from "next/navigation"
+import { createClient } from "@/lib/supabase/server"
+import BlogEditor from "@/components/blog-editor"
+import { AdminHeader } from "@/components/admin-header"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
+export default async function EditPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const supabase = await createClient()
+
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser()
+  if (error || !user) {
+    redirect("/auth/login")
+  }
+
+  // Fetch the post
+  const { data: post } = await supabase.from("blog_posts").select("*").eq("id", id).eq("author_id", user.id).single()
+
+  if (!post) {
+    redirect("/admin")
+  }
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <AdminHeader />
+      <div className="container mx-auto px-6 py-12 max-w-4xl">
+        <Link href="/admin">
+          <Button variant="ghost" className="mb-6 text-zinc-400 hover:text-white">
+            ← Back to Dashboard
+          </Button>
+        </Link>
+        <h1 className="text-4xl font-bold mb-8">Edit Post</h1>
+        <BlogEditor userId={user.id} post={post} />
+      </div>
+    </div>
+  )
+}
