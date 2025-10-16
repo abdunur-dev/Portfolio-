@@ -33,6 +33,15 @@ const projects = [
     github: null,
     live: "https://salahapologetics.com",
   },
+  {
+    title: "BaseLink App",
+    description:
+      "Base Day 2 Challenge - A comprehensive blockchain application built on Base network with modern UI and seamless user experience.",
+    tags: ["Next.js", "Base", "Web3", "TypeScript"],
+    image: "/blockchain-app-interface.png",
+    github: "https://github.com/abdunur-dev/Base-day-2-challeng",
+    live: "https://baselink-app.vercel.app",
+  },
 ]
 
 export function Projects() {
